@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1200px" height="300px" style="border: 1px solid #333333";></canvas>
+</body>
+<script>
+    function Rectangle(width, height, x, y){
+        this.width = width;
+        this.height = height;
+        this.x = x;
+        this.y = y
+        var c = document.getElementById("myCanvas")
+        var ctx = c.getContext("2d")
+        ctx.fillStyle ="#ff0000";
+        ctx.fillRect(20,20,width,height)
+    }
+    let rect = new Rectangle(100,200,50,50);
+
+</script>
+</html>
